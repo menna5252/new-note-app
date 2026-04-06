@@ -36,7 +36,7 @@ export default function LoginForm() {
 
       if(response?.ok){
         toast.success('login successful',{position:'top-center'})
-        router.push('/')
+        window.location.href = '/'
       }
       else{
         toast.error(response?.error,{position:'top-center'})
